@@ -48,15 +48,16 @@
                 tools:layout_editor_absoluteX="162dp" android:id="@+id/mensButton" android:textOff="@string/mens_off"
                 android:textOn="@string/mens_on" android:fontFamily="@font/montserrat"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false" android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="@string/womens_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="97dp"
-                tools:layout_editor_absoluteX="162dp" android:id="@+id/womensButton" android:textOff="@string/womens_off"
+                tools:layout_editor_absoluteX="162dp" android:id="@+id/womensButton"
+                android:textOff="@string/womens_off"
                 android:textOn="@string/womens_on" android:fontFamily="@font/montserrat" android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp" android:background="@drawable/swoosh_toggle"
-                android:textColor="@android:color/white" android:textAllCaps="false"/>
+                android:textColor="@android:color/white" android:textAllCaps="false" android:onClick="onWomensClicked"/>
         <ToggleButton
                 android:text="@string/co_ed_text"
                 android:layout_width="match_parent"
@@ -64,7 +65,7 @@
                 tools:layout_editor_absoluteX="162dp" android:id="@+id/coedButton" android:textOff="@string/co_ed_off"
                 android:textOn="@string/co_ed_on" android:fontFamily="@font/montserrat"
                 android:background="@drawable/swoosh_toggle" android:textColor="@android:color/white"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false" android:onClick="onCoedClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next_button"
